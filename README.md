@@ -4,14 +4,14 @@
 <2022-12-29 ~ 2023-01-30>
 
 ## 📖 목차
-[소개](#-소개)
-[실행 화면](#-실행-화면)
-[고민한 점](#-고민한-점)
-[트러블 슈팅](#-트러블-슈팅)
-[참고 링크](#-참고-링크)
+[소개](#소개)
+[실행 화면](#실행-화면)
+[고민한 점](#고민한-점)
+[트러블 슈팅](#트러블-슈팅)
+[참고 링크](#참고-링크)
 
-## 🌱 소개
-### 💻 개발환경 및 라이브러리
+## 소개
+### 개발환경 및 라이브러리
 
 [![swift](https://img.shields.io/badge/swift-5.0-orange)]()
 [![xcode](https://img.shields.io/badge/Xcode-14.2-blue)]()
@@ -20,12 +20,12 @@
 <img src="https://img.shields.io/badge/SPM-orange?style=flat&logo=Swift&logoColor=ffffff"/>
 <img src="https://img.shields.io/badge/Firebase-yellow?style=flat&logo=FireBase&logoColor=0c2a31"/> <img src="https://img.shields.io/badge/CoreData-orange?style=flat&logo=Swift&logoColor=ffffff"/>
 
-## 🧑 팀원
+## 팀원
 <img src = "https://i.imgur.com/FixFdi0.jpg" width="200" height="200">|<img src = "https://i.imgur.com/0YI1hEB.jpg" width="200" height="200">|
 |:--:|:--:|
 |[Kiwi](https://github.com/kiwi1023)|[그루트](https://github.com/Groot-94)|
 
-## 📱 실행 화면
+## 실행 화면
 
 |비밀번호 입력|달력|리스트|
 |:--:|:--:|:--:|
@@ -39,7 +39,7 @@
 |:--:|:--:|
 |<img src = "https://i.imgur.com/qph5PiT.gif" width="250">|<img src = "https://i.imgur.com/oYsVULk.gif" width="250">|
 
-## 👀 고민한 점
+## 고민한 점
 <details>
     
 **<summary>Clean Architecture를 왜 사용하는가에 대한 의문이 생겼습니다.**
@@ -88,7 +88,7 @@
     
 </details> 
 
-## ❓ 트러블 슈팅
+## 트러블 슈팅
 
 <details>
 
@@ -132,7 +132,7 @@
 (캘린더 뷰 이하 플로우 뷰는 자동으로 비밀번호 입력창을 띄우게 됨, 상위 플로우 뷰는 안띄움)
 </details> 
 
-## 🔗 참고 링크
+## 참고 링크
 
 - https://github.com/kudoleh/iOS-Clean-Architecture-MVVM
 - https://developer.apple.com/documentation/combine
