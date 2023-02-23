@@ -50,15 +50,11 @@
     
 </summary>
     
-- Testable한 코드를 만들기 위해 MVVM을 알아보던 중 Clean Architecture를 함께 쓰는 관련 글이 많이 있었습니다.
+- Testable한 코드를 만들기 위해 MVVM을 알아보던 중 Clean Architecture를 함께 쓰는 관련 글이 많이 있었습니다. 글을 보면서 `MVVM과 Clean Architecture가 어떤 이유로 함께 사용되는지에 대한 의문`이 생겨 그 부분에 대한 회의를 진행했습니다.
     
-- MVVM과 Clean Architecture가 어떤 이유로 함께 사용되는지에 대한 의문이 생겨 회의를 진행했습니다.
+- Clean Architecture를 사용함으로써 `MVVM의 Model 부분을 세분화해서 각 특성에 맞는 역할만을 수행하도록 구현해주면 각 객체들이 변화와 확장에 열려있게 되기 때문에 유지보수에 용이할 수 있음`을 알게 되었습니다.
     
-- Clean Architecture를 사용함으로써 MVVM의 Model 부분을 세분화해서 코드를 분리할 수 있었습니다. 
-    
-- 각 특성에 맞는 역할만을 수행하도록 분리해주면 모델부분의 코드들이 변화와 확장에 열려있게 되기 때문에 유지보수에 용이할 수 있음을 알게 되었습니다.
-    
-- 이런 장점을 학습하기 위해 기존 CoreData와 새롭게 Firebase를 추가하여 로컬과 리모트 DB를 함께 사용할 수 있도록 리팩토링을 진행했습니다.
+- 이런 장점을 직접 느껴보기 위해 기존 CoreData와 새롭게 Firebase를 추가하여 로컬과 리모트 DB를 함께 사용할 수 있도록 리팩토링을 진행했습니다.
     
 </details> 
 
@@ -70,9 +66,7 @@
     
 - CompletionHandler 방식을 사용할 때 Task를 cancel하는 메서드가 있었지만, Combine을 사용해야 하는 상황에선 cancel을 호출할 수 없었습니다.
 
-- Combine 학습을 통해 AnyCancellable을 취소하는 것으로 구독이 종료되고 구독에 의한 요청이 취소됨을 알 수 있었습니다.
-    
--  Cell의 prepareForReuse()에서 image를 요청하는 AnyCancellable을 모두 제거해주는 방법으로 reqeust 취소를 구현했습니다.
+- 이 부분을 해결하기 위해 Combine 학습을 했고, AnyCancellable을 취소하는 것으로 구독이 종료되고 구독에 의한 요청이 취소됨을 알 수 있었습니다. 결론적으로 `cell의 prepareForReuse()에서 image를 요청하는 AnyCancellable을 모두 제거해주는 방법`으로 reqeust 취소를 구현했습니다.
 
 </details> 
     
